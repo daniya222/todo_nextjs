@@ -13,7 +13,7 @@ async function getTodos() {
 export default async function TodoApp() {
   const { data } = await getTodos();
   return (
-    <div className="flex flex-col items-center justify-center wrap-app w-sm lg:w-[600px] bg-grey-light rounded-3xl border-white border-2 overflow-hidden">
+    <div className="flex flex-col items-center justify-center wrap-app w-sm lg:w-[660px] bg-grey-light rounded-3xl border-white border-2 overflow-hidden">
 
       <div className="bg-purple-950 h-[100px] w-full flex items-start justify-center pt-5">
         <h1 className="text-white text-center font-bold text-2xl">My Todo List</h1>

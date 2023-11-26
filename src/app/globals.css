@@ -29,10 +29,16 @@
     margin-top: -20px;
   }
   .todo-card{
-    @apply  w-full flex  p-5 justify-between items-center;
+    @apply  w-full flex  px-5 py-3 justify-between items-center;
 
   }
   .input{
     @apply bg-purple-50 w-[100%] rounded-md p-2 m-1;
+  }
+  .my-icon{
+    @apply stroke-purple-950
+  }
+  .todo-card div{
+    @apply text-purple-950
   }
 }
