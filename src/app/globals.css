@@ -2,8 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrap-container{
-  background-image: url('/bg.png');
-  background-size: cover;
-  height: 100vh;
+@layer base{
+  
+}
+
+
+@layer components{
+  .primary{
+    @apply bg-purple-950 text-white font-bold capitalize p-3 w-[100%] rounded-3xl
+  }
+
+  .wrap-container{
+    background-image: url('/bg.png');
+    background-size: cover;
+    height: 100vh;
+  }
+  .card-1{
+    max-height: 250px;
+    overflow: scroll;
+  }
+  .card-wrap{
+    @apply rounded-xl w-[90%];
+    
+  }
+  .mt--20{
+    margin-top: -20px;
+  }
+  .todo-card{
+    @apply  w-full flex  p-5 justify-between items-center;
+
+  }
+  .input{
+    @apply bg-purple-50 w-[100%] rounded-md p-2 m-1;
+  }
 }

@@ -31,12 +31,18 @@ const TodoInput = () => {
 
   
   return (
-    <div>
-      <input value={task_title} onChange={(e) => setTask_title(e.target.value)} placeholder='Task Title' />
-      <input value={notes} onChange={(e) => setNotes(e.target.value)} placeholder='Notes' />
-      <input value={date} onChange={(e) => setDate(e.target.value)} placeholder='Date' />
-      
-      <button onClick={createTodo}>save</button>
+    <div className="todo-input card-wrap bg-white my-4">
+      <h2 className="text-purple-950 px-5 pt-3 font-bold text-xl">Add Task</h2>
+      <div className="todo-card flex-col">
+        <input className="input" value={task_title} onChange={(e) => setTask_title(e.target.value)} placeholder='Task Title' />
+       
+        <input className="input" type="date" value={date} onChange={(e) => setDate(e.target.value)} placeholder='Date' />
+        <textarea className="input" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder='Notes' />
+        
+        <button className="primary mt-2" onClick={createTodo}>save</button>
+
+      </div>
+     
     </div>
   );
 }
